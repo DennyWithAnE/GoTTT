@@ -55,6 +55,7 @@ func getPlayer2Name(name string) string {
 	return player2Name
 }
 
+//Displaying the Gameboard on the terminal
 func getGameBoard(board [9]int) {
 	for i, v := range board {
 		if v == 0 {
