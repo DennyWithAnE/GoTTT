@@ -115,7 +115,7 @@ func getPlayerMove() int {
 
 func applyPlayerMove(StorePlayerMove int, player int, board [9]int) [9]int {
 
-	// Check for occupied spaces
+	// Check if the current spot is  occupied
 	if board[StorePlayerMove] != 0 {
 		fmt.Println("Space no available")
 		StorePlayerMove = getPlayerMove()
@@ -128,7 +128,6 @@ func applyPlayerMove(StorePlayerMove int, player int, board [9]int) [9]int {
 		}
 	}
 
-	// Check for out-of-bounds
 	for StorePlayerMove > 9 && StorePlayerMove < 0 {
 		fmt.Println("Please enter a number from 0 - 9")
 		StorePlayerMove = getPlayerMove()
