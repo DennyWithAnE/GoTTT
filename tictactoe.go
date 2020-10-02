@@ -45,6 +45,7 @@ func main() {
 		results := checkWinCondition(gameBoard)
 		if results > 0 {
 			fmt.Printf("Player %d win\n\n", results)
+			gameEnded = true
 		} else if currentTurn == 9 {
 			fmt.Println("Draw Game!")
 			gameEnded = true
